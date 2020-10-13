@@ -1,0 +1,148 @@
+:root{ /*original root; this is updated dynamically when theme buttons are clicked*/
+    --h1-background: red;
+    --h1-color: white;
+    --div-background: blue;
+    --div-color: pink;
+    --p-background: gold;
+    --p-color: yellow;
+    --big-div-background: purple;
+    --background: green;
+    --emphasized: purple;
+}
+
+/* Color Stylings */
+.big-div h1{
+    background-color: var(--h1-background);
+    color: var(--h1-color);
+}
+
+.big-div div{
+    background-color: var(--div-background);
+    color: var(--div-color);
+}
+
+.big-div p{
+    background-color:var(--p-background);
+    color: var(--p-color);
+}
+
+.big-div {
+    background-color: var(--big-div-background);
+}
+body {
+    background-color: var(--background);
+}
+em{
+    color: var(--emphasized);
+}
+
+
+/* Other Stylings */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+
+}
+.big-div{
+    width: max(40vw, 600px);
+    height: max(40vh, 300px);
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 6px 6px 6px rgba(0,0,0,0.5);
+    border-radius: 1000px;
+}
+
+h1{
+    text-align:center;
+    padding: 2%;
+    box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.3);
+    border-radius: 40px;
+}
+
+.big-div div{
+    width: 30%;
+    height:30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.3);
+    border-radius: 40px;
+}
+
+.big-div p{
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+
+
+
+/* Theme Panel */
+/* these settings are static */
+:root{
+    --button-background: #ff1654;
+    --button-color: #f3e9d2;
+    --container-background: #114b5f;
+    --container-color: #f3e9d2;
+}
+
+
+
+
+
+.button-container{
+    position: absolute;
+    width: max(12vw, 200px);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 16px;
+    left: 16px;
+    color: var(--container-background);
+    background-color: var(--container-color);
+    padding-bottom: 3vh;
+    font-size: 24px;
+    border-radius: 10%;
+    box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.3);
+    letter-spacing: 4px;
+}
+
+.button-container button{
+    height:56px;
+    width: 120px;
+    border-color: var(--button-color);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    border-radius:50px;
+    box-shadow: 1px 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+button{
+    outline:none;
+    border:none;
+    color: var(--button-color);
+    background-color: var(--button-background);
+}
+
+button.clicked{
+    color: var(--button-color);
+    background-color: var(--button-background);
+    box-shadow: none;
+    box-shadow: inset 3px 6px 6px 6px rgba(0,0,0,0.3);
+}
+
