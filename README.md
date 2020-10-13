@@ -1,4 +1,4 @@
-# THEME SWITCHER
+# Website with Multiple Color Themes
 
 In this project, we create a simple webpage and add a panel to switch between different color schemes. The colors are determined by the some CSS variables which we update whenever a button is clicked.
 
